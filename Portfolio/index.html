@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <meta name="title" content="Мое портфоліо">
+    <meta name="description" content="Тут ви зможете ознайомитися с моїми роботами і дізнатись більше про мене">
+
+
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Sidepanel -- src/html-->
+    @@include("html/_sidepanel.html")
+    <!-- Menu -- src/html-->  
+    @@include("html/_menu.html")
+
+    <section class="promo">
+        <div class="hamburger">
+            <span></span>
+            <span class="long"></span>
+            <span></span>
+        </div>
+        <div class="container">
+            <div class="title title_fz16 promo__subtitle">Мене звати Святослав Іванишин</div>
+            <h1 class="title title_fz48 promo__title">Я web-розробник з міста Львів</h1>
+            <div class="promo__btns">
+                <a href="#" class="promo__link btn">Портфоліо</a>
+                <a href="#" class="promo__link efect">Про мене</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aboutme -- src/html-->  
+    @@include("html/_aboutme.html")
+
+    <!-- Resume -- src/html-->  
+    @@include("html/_resume.html")
+
+    <!-- Skills -- src/html-->  
+    @@include("html/_skills.html")
+    
+    <!-- Portfolio -- src/html-->  
+    @@include("html/_portfolio.html")
+    
+    <!-- Price -- src/html-->  
+    @@include("html/_price.html")
+    
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/main_photo.jpg" alt="photo">
+                </div>
+                    <div class="contacts__descr">
+                        <h2 class="title title_fz16 contacts__title">Контакти</h2>
+                        <div class="title title_fz36 contacts__subtitle">Зв'яжіться зі мною</div>
+                        <div class="divider"></div>
+
+                        <div class="title title_fz14 contacts__text">Будь-яким зручним для вас способом:
+                        </div>
+
+                        <div class="contacts__social">
+                            <a href="#" class="contacts__link">
+                                <img src="icons/social/Facebook_straight.svg" alt="facebook">
+                            </a>
+
+                            <a href="#" class="contacts__link">
+                                <img src="icons/social/Telegram_straight.svg" alt="telegram">
+                            </a>
+
+                            <a href="#" class="contacts__link">
+                                <img src="icons/social/Instagram_straight.svg" alt="instagram">
+                            </a>
+                        </div>
+
+                        <div class="title title_fz14 contacts__text">Або залиште ваші дані і я сам вам напишу:
+                        </div>
+
+                        <form id="contacts-form" action="#" class="contacts__form">
+                            <div class="contacts__input">
+                                <input required name='name' id="name" type="text">
+                                <label for="name">Ваше імя</label>
+                            </div>
+
+                            <div class="contacts__input">
+                                <input required name="email" id="email" type="email">
+                                <label for="email">Ваша пошта</label>
+                            </div>
+                            
+                            <div class="contacts__textarea">
+                                <textarea name="text" id="text"></textarea>
+                                <label for="text">Ваше повідомлення</label>
+                            </div>
+                            <div class="contacts__triggers">
+                                <button class="contacts__btn btn">Надіслати повідомлення</button>
+                                <div class="contacts__policy">
+                                    <input required type="checkbox">
+                                    <span>Я згідний(а) з <a href="#">політикою конфіденційності</a></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+  
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
